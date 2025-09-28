@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5501/index.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Portfolio (Tisha,sec:C)</title>
+</head>
+<body>
+
+    <h1>TISHA</h1>
+
+    <ul>
+        <li><a href="http://127.0.0.1:5501/index.html#about">About</a></li>
+        <li><a href="http://127.0.0.1:5501/index.html#projects">Projects</a></li>
+        <li><a href="http://127.0.0.1:5501/index.html#contact">Contact</a></li>
+    </ul>
+
+    <hr> <h2>Welcome to My Portfolio</h2>
+    <p>Hello! I am a web development student. This is my personal portfolio website.</p>
+
+    <h2>About Me</h2>
+    <img src="./Portfolio (Tisha,sec_C)_files/profile pic.jpg" alt="Profile Picture" width="80" height="80">
+    <p>I am passionate about learning web development and building creative projects.</p>
+
+    <h2>My Projects</h2>
+    <ul>
+
+        
+        <li><b>Portfolio Website</b>: A simple personal webpage to introduce myself and share my skills.</li>
+        <li><b>Birthday Card</b>: A creative digital greeting card designed with HTML.</li>
+        <li><b>Class Timetable</b>: A webpage displaying my weekly class schedule using a table.</li>
+        <li><b>Survey Form</b>: A form webpage for collecting user feedback with fields like name, email, and comments.</li>
+
+    </ul>
+
+    <h2>Technical Skills</h2>
+    <table border="1" cellpadding="5" cellspacing="0">
+        
+            <tbody><tr>
+                <th>Skill</th>
+                <th>Level</th>
+            </tr>
+        
+        </tbody><tbody>
+            <tr>
+                <td>HTML</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Beginner</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Learning</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Contact Me</h2>
+    <form action="http://127.0.0.1:5501/index.html#" method="POST">
+        <p>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required="">
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required="">
+        </p>
+        <p>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" placeholder="Enter your message" rows="4" cols="50" required=""></textarea>
+        </p>
+        <p>
+            <button type="submit">submit</button>
+        </p>
+    </form>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
